@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.AdminController">
+    <left>
+        <VBox spacing="5" padding="10">
+            <TextField fx:id="usernameField" promptText="Kullanıcı Adı"/>
+            <PasswordField fx:id="passwordField" promptText="Şifre"/>
+            <ComboBox fx:id="roleBox" promptText="Rol Seç"/>
+            <Button text="Ekle" onAction="#addUser"/>
+            <Button text="Sil" onAction="#deleteUser"/>
+        </VBox>
+    </left>
+    <center>
+        <TableView fx:id="userTable">
+            <columns>
+                <TableColumn fx:id="colUsername" text="Kullanıcı Adı"/>
+                <TableColumn fx:id="colRole" text="Rol"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

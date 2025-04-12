@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.LoginController">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" layoutX="150" layoutY="100">
+            <Label text="Giriş Paneli" />
+            <TextField fx:id="usernameField" promptText="Kullanıcı Adı" />
+            <PasswordField fx:id="passwordField" promptText="Şifre" />
+            <Button text="Giriş Yap" onAction="#handleLogin"/>
+            <Label fx:id="errorLabel" style="-fx-text-fill: red;" />
+        </VBox>
+    </children>
+</AnchorPane>
